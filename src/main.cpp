@@ -20,9 +20,9 @@ int main(int argc, char const *argv[])
     while(true) 
     {
     fotograma++;
-    Element personaje = spinner(21,fotograma) | bold|color(Color::Blue1|bgcolor(Color::Aquiamarine);
-    Element tanque = dTanque.GetElement() | bold | color(color::Green) | bgcolor(Color::Blue); 
-    Element lienzo = hbox({personaje , tanque });
+    Element personaje = spinner(21,fotograma) | bold|color(Color::Yellow|bgcolor(Color::Red);
+    Element tanque = dTanque.GetElement() | bold | color(Color::Green) | bgcolor(Color::Blue); 
+    Element lienzo = hbox({personaje , tanque, dAlien.GetElemen() });
     
     Screen pantalla = screen :: Create(
         Dimension::Full(),

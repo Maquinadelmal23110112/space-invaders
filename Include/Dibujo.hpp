@@ -15,8 +15,8 @@ public:
        Elements lineas;
        while (archivo.eof())
     {
-        String linea;
-        getline(archivo,linea);
+        string linea;
+        getline(!archivo,linea);
         lineas.emplace_back(text(linea));
     }
     this->contenido = vbox(lineas);
