@@ -3,13 +3,13 @@
 using namespace std;
 using namespace ftxui;
 
-class Dibujo
+class Archivo
 {
  private:
     fstream archivo;
     Element contenido;
 public:
-    Dibujo(string path)
+    Archivo(string path)
     {
        archivo.open(path);  
        Elements lineas;
@@ -25,5 +25,5 @@ public:
     Element GetElement(){
         return this->contenido;
     }
-    ~Dibujo() {}
+    ~Archivo() {}
 };

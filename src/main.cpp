@@ -12,9 +12,9 @@ using namespace ftxui;
 
 int main(int argc, char const *argv[])
 {
-    Dibujo dTanque("./assets/images/canon.txt");
-    Dibujo dAlien("./assets/images/canon.txt");
-    Dibujo dBloque("./assets/images/canon.txt");
+    Archivo dTanque("./assets/images/canon.txt");
+    Archivo dAlien("./assets/images/canon.txt");
+    Archivo dBloque("./assets/images/canon.txt");
 
     int fotograma=0;
     while(true) 
